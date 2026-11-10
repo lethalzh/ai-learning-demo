@@ -1,0 +1,336 @@
+[
+  {
+    "id": "ai_foundation_01",
+    "theme": "AI基础入门",
+    "title": "AI 基础入门",
+    "content": "人工智能是一门研究如何让机器模拟人类智能的学科。它广泛应用于自然语言处理、计算机视觉、推荐系统和智能决策等领域。人工智能通常包含机器学习和深度学习等方法。机器学习允许系统从数据中学习规律，而深度学习则利用神经网络处理复杂模式。学习 AI 的关键是建立概念模型，并通过案例理解其应用方法。",
+    "result": {
+      "summary": "本文介绍了人工智能的基本概念，以及它在不同场景中的应用价值。重点在于理解 AI、机器学习和深度学习之间的关系，并认识到 AI 学习的核心思路是建立概念和案例联系。",
+      "keyPoints": [
+        "AI 是模拟人类智能的技术系统",
+        "机器学习是 AI 的核心方法之一",
+        "深度学习依赖神经网络和大规模数据",
+        "AI 的应用往往需要结合具体场景去理解"
+      ],
+      "taskList": [
+        {
+          "id": "fallback_ai_task_1",
+          "title": "整理 AI、机器学习、深度学习的关系",
+          "status": "pending",
+          "priority": "high",
+          "category": "study"
+        },
+        {
+          "id": "fallback_ai_task_2",
+          "title": "总结 5 个 AI 常见应用场景",
+          "status": "pending",
+          "priority": "medium",
+          "category": "review"
+        }
+      ],
+      "reviewPlan": [
+        {
+          "day": 1,
+          "focus": "AI 基础概念复习",
+          "actions": [
+            "回顾 AI、ML、DL 的定义",
+            "用自己的话解释三者关系"
+          ]
+        },
+        {
+          "day": 2,
+          "focus": "案例强化",
+          "actions": [
+            "列出 3 个 AI 应用案例",
+            "描述它们如何解决问题"
+          ]
+        }
+      ],
+      "terms": [
+        {
+          "word": "Artificial Intelligence",
+          "meaning": "人工智能",
+          "example": "Artificial intelligence helps machines perform human-like tasks.",
+          "difficulty": "easy"
+        },
+        {
+          "word": "Machine Learning",
+          "meaning": "机器学习",
+          "example": "Machine learning learns patterns from training data.",
+          "difficulty": "medium"
+        },
+        {
+          "word": "Deep Learning",
+          "meaning": "深度学习",
+          "example": "Deep learning uses neural networks to model complex patterns.",
+          "difficulty": "medium"
+        }
+      ],
+      "warnings": [
+        "当前处于本地缓存模式"
+      ]
+    }
+  },
+  {
+    "id": "english_01",
+    "theme": "英语学习",
+    "title": "英语学习笔记",
+    "content": "学习英语最重要的不是死记硬背，而是建立语境。单词要结合句子、情境和真实使用场景来记忆。复习时要以短时间高频重复为核心，同时要把语法和发音融入表达中。语境有助于提高记忆效率，也能帮助学生更自然地使用语言。",
+    "result": {
+      "summary": "本文强调了英语学习需要通过语境记忆，并且要将词汇、语法和发音结合起来。它鼓励以短时高频复习为方式，提升长期记忆效率。",
+      "keyPoints": [
+        "英语学习靠语境而不是孤立背词",
+        "复习需要高频短时重复",
+        "表达要结合语法和发音"
+      ],
+      "taskList": [
+        {
+          "id": "fallback_eng_task_1",
+          "title": "整理 10 个高频英语词汇",
+          "status": "pending",
+          "priority": "high",
+          "category": "study"
+        },
+        {
+          "id": "fallback_eng_task_2",
+          "title": "练习 3 句真实语境表达",
+          "status": "pending",
+          "priority": "medium",
+          "category": "review"
+        }
+      ],
+      "reviewPlan": [
+        {
+          "day": 1,
+          "focus": "词汇与语境",
+          "actions": [
+            "记 5 个重点单词",
+            "用 3 个句子复述含义"
+          ]
+        },
+        {
+          "day": 2,
+          "focus": "表达训练",
+          "actions": [
+            "模仿例句表达",
+            "做 2 次口头复述"
+          ]
+        }
+      ],
+      "terms": [
+        {
+          "word": "Context",
+          "meaning": "语境",
+          "example": "Words are easier to remember in context.",
+          "difficulty": "easy"
+        },
+        {
+          "word": "Repetition",
+          "meaning": "重复",
+          "example": "Repetition helps improve memory.",
+          "difficulty": "easy"
+        }
+      ],
+      "warnings": [
+        "当前处于本地缓存模式"
+      ]
+    }
+  },
+  {
+    "id": "python_01",
+    "theme": "Python入门",
+    "title": "Python 入门笔记",
+    "content": "Python 是一种易学、高效的编程语言，适合初学者入门。它在脚本处理、自动化、数据分析和 Web 开发领域都有广泛用途。初学者应该先理解变量、函数、列表和控制流等基础概念，之后在实践中逐步掌握模块和面向对象编程。",
+    "result": {
+      "summary": "本文总结了 Python 的学习路径和关键基础概念，强调先理解变量、函数和控制流，再逐步扩展到更高级的编程能力。",
+      "keyPoints": [
+        "Python 语法简洁，适合初学者入门",
+        "变量、函数和控制流是基础",
+        "实践是掌握 Python 的关键"
+      ],
+      "taskList": [
+        {
+          "id": "fallback_py_task_1",
+          "title": "掌握 Python 基础语法",
+          "status": "pending",
+          "priority": "high",
+          "category": "study"
+        },
+        {
+          "id": "fallback_py_task_2",
+          "title": "完成 3 个基础脚本练习",
+          "status": "pending",
+          "priority": "medium",
+          "category": "task"
+        }
+      ],
+      "reviewPlan": [
+        {
+          "day": 1,
+          "focus": "基础语法复习",
+          "actions": [
+            "复习变量与函数",
+            "写 3 个简单脚本"
+          ]
+        },
+        {
+          "day": 2,
+          "focus": "控制流训练",
+          "actions": [
+            "完成 if/for 练习",
+            "检查代码输出"
+          ]
+        }
+      ],
+      "terms": [
+        {
+          "word": "Variable",
+          "meaning": "变量",
+          "example": "A variable stores a value in memory.",
+          "difficulty": "easy"
+        },
+        {
+          "word": "Function",
+          "meaning": "函数",
+          "example": "Functions help reuse code.",
+          "difficulty": "easy"
+        }
+      ],
+      "warnings": [
+        "当前处于本地缓存模式"
+      ]
+    }
+  },
+  {
+    "id": "meeting_01",
+    "theme": "会议纪要",
+    "title": "产品评审会议纪要",
+    "content": "本次会议讨论了新产品原型的评审结果。设计团队展示了最新交互稿，研发团队反馈了接口排期和性能风险，测试团队提出需要提前介入用例评审。会议决定：本周内完成视觉稿定稿，下周进入开发联调，月底完成第一轮验收测试。各团队需在两天内提交风险清单并同步进度。",
+    "result": {
+      "summary": "本次会议围绕新产品原型评审展开，明确了设计定稿、开发联调和验收测试三个关键节点，并要求各团队在两日内提交风险清单。",
+      "keyPoints": [
+        "原型评审已完成，结论为推进开发",
+        "视觉稿本周定稿，下周开发联调",
+        "月底完成第一轮验收测试",
+        "各团队两天内提交风险清单"
+      ],
+      "taskList": [
+        {
+          "id": "fallback_meet_task_1",
+          "title": "整理各团队风险清单并汇总",
+          "status": "pending",
+          "priority": "high",
+          "category": "task"
+        },
+        {
+          "id": "fallback_meet_task_2",
+          "title": "跟进视觉稿定稿进度",
+          "status": "pending",
+          "priority": "medium",
+          "category": "task"
+        }
+      ],
+      "reviewPlan": [
+        {
+          "day": 1,
+          "focus": "会议结论回顾",
+          "actions": [
+            "复述三个关键时间节点",
+            "核对自己负责的行动项"
+          ]
+        },
+        {
+          "day": 2,
+          "focus": "进度检查",
+          "actions": [
+            "检查风险清单提交情况",
+            "同步联调排期"
+          ]
+        }
+      ],
+      "terms": [
+        {
+          "word": "Milestone",
+          "meaning": "里程碑",
+          "example": "The prototype review is a key milestone.",
+          "difficulty": "easy"
+        },
+        {
+          "word": "Stakeholder",
+          "meaning": "干系人",
+          "example": "All stakeholders must submit risk lists.",
+          "difficulty": "medium"
+        }
+      ],
+      "warnings": [
+        "当前处于本地缓存模式"
+      ]
+    }
+  },
+  {
+    "id": "data_01",
+    "theme": "数据分析基础",
+    "title": "数据分析入门笔记",
+    "content": "数据分析的核心是从数据中提取有价值的信息，用于支持决策。常见流程包括数据采集、清洗、探索性分析、建模和可视化。初学者应先掌握描述性统计和常见图表的使用场景，再学习用 SQL 和 Python 处理数据。业务理解比工具更重要，分析结论必须能回答具体业务问题。",
+    "result": {
+      "summary": "本文介绍了数据分析的完整流程与学习路径，强调描述性统计和业务理解的重要性，指出分析结论必须服务于具体业务问题。",
+      "keyPoints": [
+        "数据分析流程：采集、清洗、探索、建模、可视化",
+        "先掌握描述性统计和图表场景",
+        "SQL 与 Python 是核心工具",
+        "业务理解优先于工具熟练度"
+      ],
+      "taskList": [
+        {
+          "id": "fallback_data_task_1",
+          "title": "复习描述性统计指标（均值、中位数、方差）",
+          "status": "pending",
+          "priority": "high",
+          "category": "study"
+        },
+        {
+          "id": "fallback_data_task_2",
+          "title": "用 SQL 完成一次简单聚合查询练习",
+          "status": "pending",
+          "priority": "medium",
+          "category": "task"
+        }
+      ],
+      "reviewPlan": [
+        {
+          "day": 1,
+          "focus": "流程与概念",
+          "actions": [
+            "复述数据分析五步流程",
+            "举例说明每步的作用"
+          ]
+        },
+        {
+          "day": 2,
+          "focus": "工具实践",
+          "actions": [
+            "完成一次数据清洗练习",
+            "画一张合适的业务图表"
+          ]
+        }
+      ],
+      "terms": [
+        {
+          "word": "Exploratory Data Analysis",
+          "meaning": "探索性数据分析",
+          "example": "EDA helps find patterns before modeling.",
+          "difficulty": "medium"
+        },
+        {
+          "word": "Visualization",
+          "meaning": "可视化",
+          "example": "Visualization makes insights easier to understand.",
+          "difficulty": "easy"
+        }
+      ],
+      "warnings": [
+        "当前处于本地缓存模式"
+      ]
+    }
+  }
+]
