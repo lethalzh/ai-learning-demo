@@ -1,6 +1,16 @@
+import { useState } from "react";
 import { EmptyState } from "../components/EmptyState";
+import ConfirmDialog from "../components/ConfirmDialog";
 
 export default function HistoryPage({ history, setHistory }) {
+  const [pendingDelete, setPendingDelete] = useState(null);
+
+  const confirmDelete = () => {
+    if (!pendingDelete) return;
+    setHistory((prev) => prev.filter((x) => x.id !== pendingDelete.id));
+    setPendingDelete(null);
+  };
+
   return (
     <div className="mx-auto max-w-3xl">
       <div className="mb-5 flex items-baseline justify-between gap-3">
@@ -42,7 +52,7 @@ export default function HistoryPage({ history, setHistory }) {
                       {offline ? "离线" : "在线"}
                     </span>
                     <button
-                      onClick={() => setHistory((prev) => prev.filter((x) => x.id !== item.id))}
+                      onClick={() => setPendingDelete(item)}
                       className="flex min-h-[44px] items-center rounded-lg px-2 text-[11px] text-slate-400 transition hover:bg-rose-50 hover:text-rose-600 sm:min-h-0 sm:py-1"
                     >
                       删除
@@ -58,6 +68,27 @@ export default function HistoryPage({ history, setHistory }) {
           })}
         </div>
       )}
+
+      <ConfirmDialog
+        open={Boolean(pendingDelete)}
+        title="删除这条分析记录？"
+        description="删除后不可恢复，该记录将从历史列表中移除。"
+        detail={
+          pendingDelete && (
+            <div className="rounded-xl border border-slate-100 bg-slate-50 p-3">
+              <div className="truncate text-xs font-semibold text-slate-800">
+                {pendingDelete.theme}
+              </div>
+              <div className="mt-1 truncate text-[11px] text-slate-500">
+                {new Date(pendingDelete.createdAt).toLocaleString()} · {pendingDelete.learningGoal}
+              </div>
+            </div>
+          )
+        }
+        confirmLabel="删除记录"
+        onConfirm={confirmDelete}
+        onCancel={() => setPendingDelete(null)}
+      />
     </div>
   );
 }

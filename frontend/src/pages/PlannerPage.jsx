@@ -1,5 +1,7 @@
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { EmptyState } from "../components/EmptyState";
+import ConfirmDialog from "../components/ConfirmDialog";
 
 const PRIORITY_STYLES = {
   high: "bg-rose-50 text-rose-600",
@@ -32,6 +34,7 @@ function CheckBox({ done }) {
 
 export default function PlannerPage({ tasks, setTasks }) {
   const navigate = useNavigate();
+  const [confirmClearDone, setConfirmClearDone] = useState(false);
   const doneCount = tasks.filter((task) => task.status === "done").length;
   const pendingCount = tasks.length - doneCount;
   const progress = tasks.length === 0 ? 0 : Math.round((doneCount / tasks.length) * 100);
@@ -48,6 +51,7 @@ export default function PlannerPage({ tasks, setTasks }) {
 
   const clearDone = () => {
     setTasks((prev) => prev.filter((task) => task.status !== "done"));
+    setConfirmClearDone(false);
   };
 
   return (
@@ -59,7 +63,7 @@ export default function PlannerPage({ tasks, setTasks }) {
         </div>
         {doneCount > 0 && (
           <button
-            onClick={clearDone}
+            onClick={() => setConfirmClearDone(true)}
             className="flex min-h-[44px] shrink-0 items-center rounded-lg px-2.5 text-[11px] font-medium text-slate-400 transition hover:bg-rose-50 hover:text-rose-600 sm:min-h-0 sm:py-1.5"
           >
             清除已完成
@@ -147,6 +151,15 @@ export default function PlannerPage({ tasks, setTasks }) {
           })}
         </div>
       )}
+
+      <ConfirmDialog
+        open={confirmClearDone}
+        title="清除已完成任务？"
+        description={`将删除 ${doneCount} 个已完成任务，删除后不可恢复，未完成的任务不受影响。`}
+        confirmLabel="清除任务"
+        onConfirm={clearDone}
+        onCancel={() => setConfirmClearDone(false)}
+      />
     </div>
   );
 }
